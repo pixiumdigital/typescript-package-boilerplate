@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Webpack Packages</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: rgb(255, 255, 255);
+        font-family: sans-serif;
+      }
+      .header {
+        padding: 20px;
+      }
+      h1 {
+        margin: 0;
+        color: #9b0005;
+      }
+      .body {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Welcome to Pixium</h1>
+    </div>
+    <div class="body">
+      <h2>Introduction</h2>
+      <p>
+        In this example we have a simple look at a very basic typescript package
+        exported for the web.
+      </p>
+      <p>
+        We leverage the use of webpack to expose our package to the browser.
+      </p>
+      <h2>Getting Started</h2>
+      <p>To get started modify the code present in <b>src/index.ts</b></p>
+      <p>
+        To edit the package name modify the <b>webpack.config.js</b> more
+        precisly the <b>output --> library</b> field
+      </p>
+      <div id="pixiumBanner"></div>
+    </div>
+
+    <script src="./dist/bundle.js"></script>
+
+    <script>
+      pixiumPackage.PixiumHello();
+      const test = new pixiumPackage.Pixium("Mederic");
+      test.banner();
+    </script>
+  </body>
+</html>
