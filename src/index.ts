@@ -35,6 +35,7 @@ export class Pixium {
             this.changeColor()
         }
     }
+
     /**
      * Display a red console.log banner
      */
