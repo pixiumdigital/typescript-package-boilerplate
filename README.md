@@ -15,9 +15,11 @@ yarn
 # Developement 
 
 ```
-yarn dev
+yarn start
 ```
 
+This will start webpack to compile the library on changes. 
+This will also start snowpack which will update the index.html in test once the library from webpack has been compiled
 # Build
 
 ```
